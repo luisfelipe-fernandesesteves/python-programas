@@ -17,4 +17,4 @@ Bora praticar, galera! Ótimos estudos!!!
 senha = 1234
 
 while senha_digitada != senha:
-   
+   senha_digitada = int(input("Digite a senha: "))
