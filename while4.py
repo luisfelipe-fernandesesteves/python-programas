@@ -14,5 +14,3 @@ numero = int(input("Digite um número (-1 para sair): "))
 soma = 0
 
 while numero != -1:
-    
-
