@@ -1,0 +1,56 @@
+exercicios Exercícios - Estruturas de Repetição - while
+ 
+📌 Exercício 1 – Contagem crescente
+Escreva um programa que solicite ao usuário um número inteiro positivo e exiba na tela uma contagem de 1 até esse número.
+Exemplo:
+Digite um número: 5
+1
+2
+3
+4
+5
+ 
+📌 Exercício 2 – Contagem regressiva
+Escreva um programa que leia um número inteiro positivo e exiba uma contagem desse número até 0.
+Exemplo:
+Digite um número: 5
+5
+4
+3
+2
+1
+0
+ 
+📌 Exercício 3 – Soma acumulada
+Crie um programa que solicite números ao usuário até que ele digite 0. Ao final, exiba a soma de todos os números informados (desconsiderando o zero).
+Exemplo:
+Digite um número (0 para sair): 3
+Digite um número (0 para sair): 7
+Digite um número (0 para sair): 2
+Digite um número (0 para sair): 0
+Soma total: 12
+ 
+📌 Exercício 4 – Média de valores
+Escreva um programa que leia vários números informados pelo usuário. O programa deve encerrar quando o usuário digitar -1 e, ao final, calcular e exibir a média dos valores digitados (desconsiderando o -1).
+Exemplo:
+Digite um número (-1 para sair): 6
+Digite um número (-1 para sair): 8
+Digite um número (-1 para sair): 4
+Digite um número (-1 para sair): -1
+Média: 6.0
+ 
+📌 Exercício 5 – Validação de senha
+Crie um programa que solicite ao usuário uma senha. Enquanto a senha digitada estiver incorreta, o programa deve continuar pedindo novamente. Quando o usuário acertar, exiba uma mensagem de acesso permitido.
+Regras:
+Defina uma senha fixa no código (por exemplo: 1234)
+Utilize while para repetir até acertar
+Exemplo:
+Digite a senha: 1111
+Senha incorreta!
+Digite a senha: 1234
+Acesso permitido!
+ 
+Bora praticar, galera!
+Ótimos estudos!!!
+ 
+ 
