@@ -16,4 +16,4 @@ soma = 0
 while numero != -1:
     soma = soma + numero
     numero = int (input('Digite um número (-1 para sair):'))
-print(f'a soma é {soma}')
+print(f'a soma é: {soma}')
