@@ -10,13 +10,11 @@ Digite um número (0 para sair): 2
 Digite um número (0 para sair): 0
 Soma total: 12'''
 
-numero = int
-
-#while = condição. ex: se numero for 0 o código executa X função
-while numero > 0:
+numero = int(input("Digite um número (0 para sair): "))
+soma = 0
+while numero != 0:
+    soma += numero
     numero = int(input("Digite um número (0 para sair): "))
-    if numero > 0:
-        soma = soma + numero
-print("Soma total: ", soma)
+print("Soma total:", soma)
 
     
