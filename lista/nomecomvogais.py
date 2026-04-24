@@ -3,11 +3,16 @@ escreva um programa que leia 5 nomes e armazene os em uma lista
 '''
 
 nomes = []
+ # cria uma lista vazia chamada "nomes"
 
-''' para i de 0 a 4, ou seja, 5 vezes '''
+
 for i in range(5): 
+   # range(5) gera números de 0 até 4
+    # isso faz o laço repetir 5 vezes
+
     nome = input('Nome: ')
     nomes.append(nome)
+    # append() adiciona o nome digitado dentro da lista "nomes"
 
 print('--------------------')
 
