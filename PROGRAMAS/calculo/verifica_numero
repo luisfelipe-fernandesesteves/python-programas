@@ -1,0 +1,14 @@
+'''escreva um programa que recebe um numero e verifique se ele é positivo, negativo ou zero
+o programa deve imprimir para o usuario o resultado'''
+
+#entrada de dados
+n = int(input('numer'))
+
+#teste condicional
+if n>0:
+    print('POSITIVO!!')
+elif n<0:
+    print('NEGATIVO!')
+else:
+    print('ZERO!!')
+    
