@@ -16,4 +16,6 @@ def prencher_notas(qtd):
         nota = float(input('NOTA:'))
         notas.append(nota)
         return notas
+    
+def imprimir_notas()
 
