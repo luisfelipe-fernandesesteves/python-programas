@@ -24,6 +24,15 @@ def imprimir_notas(notas):
         print(f'aluno{i}: ')
         print(f'nota:{nota}')
         i += 1
+
+def calcular_notas(alunos, notas):
+    total_notas = 0
+    for nota in notas:
+        total_notas = total_notas + alunos
+    media = total_notas/alunos
+    print(f"a nota dos alunos é de {media}")
+    return media
+
 #principal, onde vai rodar
 qtd = qtd_alunos()
 lista_notas = prencher_notas(qtd)
