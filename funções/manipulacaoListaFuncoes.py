@@ -4,36 +4,43 @@ def qtd_alunos():
     while qtd < 1:
         qtd = int(input('qtd de alunos: '))
         if qtd < 1:
-            print('quantidade precisa ser MAIOR do que ZERO: 0')
+            print('quantidade precisa ser MAIOR do que ZERO.')
     return qtd
 
-#qtd define quantas vezes vai rodar (quantos alunos tem)
 def prencher_notas(qtd):
-    print('--preenchendo as notas...--')
+    print('-- preenchendo as notas... --')
     notas = []
     for i in range(qtd):
-        print(f'aluno {i+1}:')
-        nota = float(input('NOTA:'))
+        nota = float(input(f'Nota do aluno {i+1}: '))
         notas.append(nota)
     return notas
     
 def imprimir_notas(notas):
-    print('--imprimindo as notas dos alunos...--')
-    i = 1
-    for nota in notas:
-        print(f'aluno{i}: ')
-        print(f'nota:{nota}')
-        i += 1
+    print('-- imprimindo as notas dos alunos... --')
+    for i, nota in enumerate(notas, 1):
+        print(f'Aluno {i}: {nota}')
 
-def calcular_notas(alunos, notas):
-    total_notas = 0
-    for nota in notas:
-        total_notas = total_notas + alunos
-    media = total_notas/alunos
-    print(f"a nota dos alunos é de {media}")
+def calcular_media(notas):
+    total_notas = sum(notas) # Soma todos os valores da lista
+    media = total_notas / len(notas)
+    print(f"A média da turma é: {media:.2f}")
     return media
 
-#principal, onde vai rodar
-qtd = qtd_alunos()
-lista_notas = prencher_notas(qtd)
-imprimir_notas(lista_notas)
+def verificar_abaixo_media(notas):
+    print('-- alunos abaixo da média (6.0) --')
+    alunos_abaixo = []
+    for i, nota in enumerate(notas, 1):
+        if nota < 6:
+            print(f'Aluno {i} com nota {nota} está abaixo da média.')
+            alunos_abaixo.append(nota)
+    return alunos_abaixo
+
+# --- Fluxo Principal ---
+def main():
+    qtd = qtd_alunos()
+    lista_notas = prencher_notas(qtd)
+    imprimir_notas(lista_notas)
+    media_final = calcular_media(lista_notas)
+    verificar_abaixo_media(lista_notas)
+
+main()
