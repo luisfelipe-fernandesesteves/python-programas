@@ -7,6 +7,10 @@ def qtd_alunos():
             print('quantidade precisa ser MAIOR do que ZERO: 0')
     return qtd
 
-def prencher_notas():
+def prencher_notas(qtd):
     print('--preenchendo as notas...--')
-    
+    notas = []
+    for i in range(qtd):
+        nota = float(input('NOTA:'))
+        notas.append(nota)
+
