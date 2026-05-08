@@ -17,5 +17,6 @@ def prencher_notas(qtd):
         notas.append(nota)
         return notas
     
-def imprimir_notas()
+def imprimir_notas():
+    print('--imprimindo as notas dos alunos...--')
 
