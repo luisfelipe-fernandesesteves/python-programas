@@ -69,3 +69,37 @@ def main():
     verificar_abaixo_media(lista_notas)
 
 main()
+
+"""
+============================================================
+O QUE CADA COMANDO FAZ NO PYTHON:
+============================================================
+
+1. def (Definition):
+   Serve para CRIAR uma função. É como dar um nome a um 
+   conjunto de instruções para usá-las depois apenas 
+   chamando esse nome.
+   Ex: def calcular_total():
+
+2. append (Anexar):
+   É um comando de LISTAS. Ele serve para colocar um novo 
+   dado no final de uma lista que já existe.
+   Ex: lista.append(valor) -> [item1, item2, VALOR]
+
+3. len (Length):
+   Serve para contar o TAMANHO de algo. Se usado em uma 
+   lista, ele diz quantos itens tem lá dentro.
+   Ex: len([10, 20, 30]) retorna 3.
+
+4. .2f (Float Formatting):
+   Usado dentro de strings (f-strings) para limitar as 
+   casas decimais de um número. O '2' indica duas casas.
+   Ex: f"{3.1415:.2f}" vira "3.14".
+
+5. enumerate (Enumerar):
+   Serve para percorrer uma lista recebendo ao mesmo tempo 
+   o ÍNDICE (a contagem) e o VALOR (o dado). Evita ter 
+   que criar contadores manuais como 'i = i + 1'.
+   Ex: for i, nota in enumerate(notas, 1):
+============================================================
+"""
