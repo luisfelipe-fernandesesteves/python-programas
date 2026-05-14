@@ -25,61 +25,61 @@ def menu():
     print('4 - DIVISÃO')
     #variavel opção dentro de DEF menu
     #só vai ser mostrada dentro de menu
-    opcao = int(input('opção'))
-    return opcao
+    opcao = int(input('opção')) #variavel opcao recebe o valor digitado pelo usuario
+    return opcao #vai retornar a opção digitada para o controlador
 
-def entrada_dados():
+def entrada_dados():#vai ser reutilizada para n1 e n2
     print('--- entrada de dados ---')
-    numero = int(input('numero: '))
-    return numero
+    numero = int(input('numero: '))#variavel numero dentro de DEF entrada_dados
+    return numero #vai retornar o numero digitado para o controlador
 
-def adicao(n1, n2):
+def adicao(n1, n2):#n1 e n2 são os numeros digitados pelo usuario
     print('--- adição ---')
-    return n1+n2
+    return n1+n2 #vai retornar a soma de n1 e n2 para o controlador
 
-def subtracao(n1, n2):
+def subtracao(n1, n2): #n1 e n2 são os numeros digitados pelo usuario
     print('--- subtração--- ')
-    return n1-n2
+    return n1-n2 #vai retornar a subtração de n1 e n2 para o controlador
 
-def multiplicacao(n1, n2):
+def multiplicacao(n1, n2): #n1 e n2 são os numeros digitados pelo usuario
     print('--- multiplicacao ---')
-    return n1*n2
+    return n1*n2 #vai retornar a multiplicação de n1 e n2 para o controlador
 
-def divisão(n1, n2):
-    print('--- multiplicacao ---')
-    return n1/n2
+def divisão(n1, n2):#n1 e n2 são os numeros digitados pelo usuario
+    print('--- divisão ---')
+    return n1/n2 #vai retornar a divisão de n1 e n2 para o controlador
 
-def inprimir(resultado):
+def inprimir(resultado):#resultado é o valor retornado pelo controlador
     print ('--- imprimir ---')
     print ('=======================')
-    print (f'resultado {resultado}')
+    print (f'resultado {resultado}') #ELE PEGA RESULTADO DE CONTROLADOR E IMPRIME PARA O USUÁRIO
     print ('=======================')
     
-def controlador(opcao, n1, n2):
+def controlador(opcao, n1, n2): #opção é o valor retornado pelo menu, n1 e n2 são os valores retornados pela entrada de dados
     print ('--- controlador ---')
-    if opcao == 1:
-        resultado = adicao(n1, n2)
-    elif opcao == 2:
-        resultado = subtracao(n1, n2)
-    elif opcao == 3:
+    if opcao == 1: #se a opção for 1, vai chamar a função adição e passar n1 e n2 como parametros
+        resultado = adicao(n1, n2) #resultado é a variavel que vai receber o valor retornado pela função adição, que é a soma de n1 e n2
+    elif opcao == 2: #se a opção for 2, vai chamar a função subtração e passar n1 e n2 como parametros
+        resultado = subtracao(n1, n2) #resultado é a variavel que vai receber o valor retornado pela função subtração, que é a subtração de n1 e n2
+    elif opcao == 3: #se a opção for 3, vai chamar a função multiplicação e passar n1 e n2 como parametros
         resultado = multiplicacao(n1, n2)
     elif opcao == 4:
         resultado = divisão(n1, n2)
     else:
         print('opção invalida')
-    return resultado
+    return resultado #vai retornar o resultado da operação escolhida para a função inprimir
 
 #principal main
 # é oque vai ser executado quando rodar o programa
 
 #menu vai ser mostrado para o usuario
-opcao = menu()
-n1 = entrada_dados()
+opcao = menu() #variavel opção recebe o valor retornado pelo menu, que é a opção escolhida pelo usuario
+n1 = entrada_dados() #variavel n1 recebe o valor retornado pela função entrada_dados, que é o numero digitado pelo usuario
 #reutilização de entrada de dados
-n2 = entrada_dados()
+n2 = entrada_dados() #variavel n2 recebe o valor retornado pela função entrada_dados, que é o numero digitado pelo usuario
 
-resultado = controlador(opcao, n1, n2)
-inprimir(resultado)
+resultado = controlador(opcao, n1, n2) #variavel resultado recebe o valor retornado pela função controlador, que é o resultado da operação escolhida pelo usuario
+inprimir(resultado) #chama a função inprimir e passa o resultado como parametro, que é o valor retornado pela função controlador, que é o resultado da operação escolhida pelo usuario
 
 
         
